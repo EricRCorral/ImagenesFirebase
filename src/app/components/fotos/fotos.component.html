@@ -1,0 +1,8 @@
+<div class="card-columns animated fadeIn">
+    <div class="card" *ngFor="let item of items | async | slice:0:maximo">
+        <a href="{{ item.url }}" target="_blank"><img [src]="item.url" class="card-img-top"></a>
+    </div>
+</div>
+<div class="text-center my-2 animte fadeIn">
+    <button class="btn btn-outline-primary" (click)="verMas()">Ver mas imagenes</button>
+</div>
